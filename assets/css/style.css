@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ededf6;
+  color: #375351;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  background-color: #406945;
+  height: 10vh;
+  padding: 10px 20px 10px 0px;
+}
+
+header .brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #124629;
+  width: 40%;
+  height: 100%;
+  padding-right: 1%;
+}
+
+header .brand h1 {
+  font-size: 2em;
+  margin-left: auto;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 40%;
+  margin-left: auto;
+}
+
+header nav a {
+  color: #22412c;
+  margin: 5px;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  color: #36634a;
+}
+
+section {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+  width: 100px;
+  text-align: right;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+
+section > div {
+  padding-left: 20px;
+  border-left: 5px solid #36634a;
+}
+
+/* About Section */
+#about-me div img {
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+/* Work Section */
+#work div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+}
+
+.work-link-feature {
+  width: 100%;
+  position: relative;
+}
+
+.work-link {
+  width: 49%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.work-img:hover {
+  filter: brightness(100%);
+}
+
+.work-img {
+  border: 5px solid #36634a;
+  height: auto;
+  width: 100%;
+  filter: brightness(75%);
+}
+
+.work-subtitle {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  color: #ffffff;
+  background-color: #133626;
+  text-decoration: none;
+  padding: 1px;
+}
+
+.work-subtitle h3 {
+  font-size: 2vw;
+}
+
+
+/* Contact Section */
+#contact-me div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+#contact-me div a {
+  color: #36634a;
+  margin: 5px;
+  padding: 5px;
+  font-size: 2vw;
+  text-decoration: none;
+  border-bottom: 5px solid #36634a;
+  transition: all 0.3s ease-in;
+}
+
+#contact-me div a:hover {
+  color: #36634a;
+  background-color: #36634a;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+
+  header .brand,
+  header nav {
+    width: 100vw;
+  }
+
+  header .brand h1 {
+    margin: 0 auto;
+  }
+
+
+  main {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  #contact-me div {
+    flex-direction: column;
+  }
+
+  #contact-me div a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work-link {
+    width: 100%;
+  }
+}
